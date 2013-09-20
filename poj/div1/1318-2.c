@@ -50,3 +50,41 @@ int main(){
     }
     return 0;
 }
+
+//test data
+/*
+tarp
+given
+score
+refund
+only
+trap
+work
+earn
+course
+pepper
+part
+XXXXXX
+resco
+nfudre
+aptr
+sett
+oresuc
+XXXXXX
+*/
+
+//output
+/*
+score
+******
+refund
+******
+part
+tarp
+trap
+******
+NOT A VALID WORD
+******
+course
+******
+*/
