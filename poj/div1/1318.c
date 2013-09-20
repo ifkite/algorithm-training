@@ -1,7 +1,13 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #define STR_SIZE 7
 #define DICT_SIZE 100
+int cmpDict(const void *pa, const void *pb){
+    char *p1 = (char*)pa;
+    char *p2 = (char*)pb;
+    return strcmp(p1, p2);
+}
 int main(){
     int arrStrLen[DICT_SIZE] = {0};
     int dictTail = 0;
@@ -21,9 +27,10 @@ int main(){
         gets(str);
         ++dictTail;
     }
-    
     //cipher
     int loopVar;
+    for(loopVar = 0; loopVar < dictTail; ++loopVar)
+        printf("%s\n",dict[loopVar]);
     ////fgets(str, STR_SIZE, stdin);
     gets(str);
     //deal with input, and handle data
