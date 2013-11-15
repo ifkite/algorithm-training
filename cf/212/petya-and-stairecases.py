@@ -3,7 +3,7 @@
 import sys
 def main(max_stair,dirty_num,dirty_stair):
     i=0
-    if dirty_stair[0] is 1 or dirty_stair[-1] is max_stair:
+    if dirty_stair[0]==1 or dirty_stair[-1]==max_stair:
         print 'NO'
         return
     while i+2<dirty_num:
